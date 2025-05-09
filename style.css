@@ -560,7 +560,7 @@ button.filter-button:hover {
   border: #dc6696;
 }
 
-a.book-now-btn:hover {
+.book-now-btn:hover {
   background-color: #f51fb5 !important;
 }
 
@@ -612,4 +612,14 @@ a.book-now-btn:hover {
 /* Footer */
 .footer-heading2 {
   color: #dc6696;
+}
+
+/* Quick Links */
+.book-now-btn-links {
+  background-color: #dc6696;
+  border: #dc6696;
+}
+
+.book-now-btn-links:hover {
+  background-color: #f51fb5 !important;
 }
