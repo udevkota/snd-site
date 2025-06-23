@@ -326,7 +326,7 @@ iconify-icon.icon-arrow-right:active {
   border: 1px solid var(--bs-border-color);
 }
 
-span.price-tick {
+.price-tick {
   color: var(--accent-color);
 }
 
@@ -572,7 +572,7 @@ button.filter-button:hover {
 /* Remove social icons on tablets */
 @media screen and (max-width: 1350px) {
   .social-nav {
-    display: none !important;
+    text-align: center;
   }
 }
 
@@ -600,8 +600,18 @@ button.filter-button:hover {
 }
 
 /* Quick Links */
-#about, #about-us {
+#about,
+#about-us {
   background-color: #dec49a;
+}
+
+.book-now-btn-links {
+  background-color: #dc6696;
+  border: #dc6696;
+}
+
+.book-now-btn-links:hover {
+  background-color: #f51fb5 !important;
 }
 
 /* Timeline Facts */
@@ -614,12 +624,9 @@ button.filter-button:hover {
   color: #dc6696;
 }
 
-/* Quick Links */
-.book-now-btn-links {
-  background-color: #dc6696;
-  border: #dc6696;
-}
-
-.book-now-btn-links:hover {
-  background-color: #f51fb5 !important;
+/* Detailing Services Scroll */
+.price-option {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
 }
