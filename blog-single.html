@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbo - Car Wash Free Bootstrap5 HTML Website Template</title>
+
+  <!--vendor css ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!--Bootstrap ================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Style Sheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+  <nav class="navbar fixed-top navbar-expand-lg container-fluid p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/main-logo-light.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  active mx-2 px-3 mb-2 mb-lg-0" aria-current="page"
+                href="index.html">home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white text-uppercase mx-2 px-3 mb-2 mb-lg-0 dropdown-toggle"
+                data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" href="#">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html" class="dropdown-item text-uppercase ">About <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="blog.html" class="dropdown-item text-uppercase ">Blog <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="blog-single.html" class="dropdown-item text-uppercase ">Blog-Single <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="booking.html" class="dropdown-item text-uppercase ">Booking <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="services.html" class="dropdown-item text-uppercase ">Services <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="services-single.html" class="dropdown-item text-uppercase ">Service-Single
+                    <span class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="project.html" class="dropdown-item text-uppercase ">Project <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="pricing.html" class="dropdown-item text-uppercase ">Pricing <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="contact.html" class="dropdown-item text-uppercase ">Contact <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="team.html" class="dropdown-item text-uppercase ">Our Team <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="review.html" class="dropdown-item text-uppercase ">Reviews <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="faq.html" class="dropdown-item text-uppercase ">FAQs <span
+                      class="badge bg-secondary">Pro</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">Contact</a>
+            </li>
+
+          </ul>
+
+          <div class="  d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end ">
+            <ul class="navbar-nav social-div justify-content-end align-items-center">
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:facebook-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:instagram-line" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:twitter-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:linkedin-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:youtube-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" style="background-image:url(images/banner6-img.jpg);">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white">
+          <a href="" class="text-decoration-none">
+            <p class="blog-topic text-white text-uppercase mt-5 mb-0">Cars / 12 jan, 2022</p>
+          </a>
+          <h2 class="page-title display-3 text-white mb-4">Main thing to remember while washing car</h2>
+          <nav class="breadcrumb">
+            <a class="breadcrumb-item text-white" href="index.html">Home</a>
+            <span class="breadcrumb-item active text-white" aria-current="page">Blog-Single</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="post-wrap py-5 no-padding-bottom">
+    <div class="container">
+      <div class="row g-5 mt-4">
+        <main class="post-grid col-md-9">
+          <div class="row">
+            <article class="post-item">
+              <div class="hero-image">
+                <img src="images/banner3-img.jpg" alt="single-post" class="img-fluid">
+              </div>
+              <div class="post-content py-5">
+                <div class="post-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur facilisis vivamus massa magna.
+                    Blandit mauris libero condimentum commodo morbi consectetur sociis convallis sit. Magna diam amet
+                    justo sed vel dolor et volutpat integer. Iaculis sit sapien hac odio elementum egestas neque.
+                    Adipiscing purus euismod orci sem amet, et. Turpis erat ornare nisi laoreet est euismod.</p>
+                  <p>Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non
+                    aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel. Morbi arcu
+                    amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat.
+                    Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum
+                    eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare.
+                    Purus ut quis sed venenatis eget ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt
+                    nunc integer sit.</p>
+                  <blockquote>“Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor
+                    curabitur non aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus,
+                    vel.</blockquote>
+                  <h4>Consectetur Facilisis Vivamus</h4>
+                  <ul class="inner-list">
+                    <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
+                    <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
+                    <li>Laculis sit sapien hac odio elementum egestas neque.</li>
+                  </ul>
+                  <p>Morbi arcu amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum
+                    erat. Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque
+                    bibendum eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit
+                    ornare. Purus ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt nunc integer sit.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Nunc tempus feugiat massa
+                    laoreet ultrices diam magna quam. Congue auctor auctor luctus neque. Enim lorem ultrices diam donec.
+                    Sed id placerat consectetur faucibus.</p>
+                  <div class="row my-4">
+                    <div class="col-md-6">
+                      <img src="images/blog3.jpg" alt="post-image" class=" img-fluid align-left">
+                      <h5 class="text-center mt-3">Velit, praesent pharetra malesuada</h5>
+                    </div>
+                    <div class="col-md-6">
+                      <img src="images/blog5.jpg" alt="post-image" class=" img-fluid align-right">
+                      <h5 class="text-center mt-3">Velit, praesent pharetra malesuada</h5>
+                    </div>
+                  </div>
+
+                  <p>Id pulvinar amet. Consequat potenti mollis massa iaculis et, dolor, eget lectus. Aliquam
+                    pellentesque molestie felis fames sed eget non euismod eget. Et eget ullamcorper urna, elit ac diam
+                    tellus viverra lacus.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus.</p>
+                  <p>Velit, praesent pharetra malesuada id pulvinar amet. Consequat potenti mollis massa iaculis et,
+                    dolor, eget lectus. Aliquam pellentesque molestie felis fames sed eget non euismod eget. Et eget
+                    ullamcorper urna, elit ac diam tellus viverra lacus.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus.</p>
+                  <div class="post-bottom-link d-md-flex justify-content-between my-5">
+                    <div class="block-tag">
+                      <ul class="list-unstyled text-decoration-underline d-flex ">
+                        <li class="me-3">
+                          <a href="#">Cars</a>
+                        </li>
+                        <li class="me-3">
+                          <a href="#">Bus</a>
+                        </li>
+                        <li class="me-3">
+                          <a href="#">Cargo-truck</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="block-social-links d-flex">
+                      <div class="element-title text-uppercase pe-4">Share:</div>
+                      <ul class="list-unstyled d-flex gap-3 m-0 ">
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:facebook-fill" class="social-icon "></iconify-icon>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:instagram-line" class="social-icon "></iconify-icon>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:twitter-fill" class="social-icon "></iconify-icon>
+
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:youtube-fill" class="social-icon "></iconify-icon>
+
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-secondary p-0">
+                            <iconify-icon icon="ri:linkedin-fill" class="social-icon "></iconify-icon>
+
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="single-post-navigation">
+                  <div class="post-navigation d-flex justify-content-between">
+                    <a itemprop="url" class="post-prev" href="">
+                      <iconify-icon icon="solar:arrow-left-linear" class="pagination-arrow"></iconify-icon>
+                      <span class="page-nav-title text-uppercase ms-2">How to take care of your cars</span>
+                    </a>
+                    <a itemprop="url" class="post-next" href="">
+                      <span class="page-nav-title text-uppercase me-2">Summer tips for truck owners</span>
+                      <iconify-icon icon="solar:arrow-right-linear" class="pagination-arrow"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div id="post-author-info" class="border-top border-bottom py-4">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-3">
+                  <div class="image-holder">
+                    <a itemprop="url" href="#">
+                      <img src="images/blog4.jpg" class="img-fluid" alt="author">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="post-author-content">
+                    <div class="element-title text-uppercase">
+                      <a itemprop="url" href="">James Younes</a>
+                    </div>
+                    <span class="author-position">Car Washer</span>
+                    <p>Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus,
+                      nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero
+                      dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet.
+                      Magnis dictum et eros purus fermentum, massa ullamcorper sit sollicitudin.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section id="post-comment">
+              <div class="container">
+                <div class="row my-5">
+                  <div class="comments-wrap">
+                    <h3 class="text-uppercase mb-5">
+                      <span class="count">3</span> Comments
+                    </h3>
+                    <div class="comment-list">
+                      <article class="comment-item pb-3 row">
+                        <div class="col-md-2">
+                          <img src="images/commentor-item1.jpg" alt="default"
+                            class="commentor-image img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-10">
+                          <div class="author-post mb-4">
+                            <div class="comment-meta text-uppercase d-flex gap-3 text-black">
+                              <div class="author-name">Lufy carlson</div>
+                              <span class="meta-date">Jul 10</span>
+                            </div>
+                            <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.</p>
+                            <div class="comments-reply border-animation">
+                              <a href="#">
+                                <i class="icon icon-mail-reply"></i>Reply </a>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="comment-item pb-3 row child-comments">
+                        <div class="col-md-2">
+                          <img src="images/commentor-item2.jpg" alt="default"
+                            class="commentor-image img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-10">
+                          <div class="author-post mb-4">
+                            <div class="comment-meta text-uppercase d-flex gap-3 text-black ">
+                              <div class="author-name">Lora leigh</div>
+                              <span class="meta-date">Jul 10</span>
+                            </div>
+                            <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.</p>
+                            <div class="comments-reply border-animation">
+                              <a href="#">
+                                <i class="icon icon-mail-reply"></i>Reply </a>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="comment-item pb-3 row">
+                        <div class="col-md-2">
+                          <img src="images/commentor-item3.jpg" alt="default"
+                            class="commentor-image img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-10">
+                          <div class="author-post mb-4">
+                            <div class="comment-meta text-uppercase d-flex gap-3 text-black ">
+                              <div class="author-name">Natalie dormer</div>
+                              <span class="meta-date">Jul 10</span>
+                            </div>
+                            <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                              consequert.</p>
+                            <div class="comments-reply border-animation">
+                              <a href="#">
+                                <i class="icon icon-mail-reply"></i>Reply </a>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="comment-respond my-5">
+                    <h3 class="text-uppercase">Leave a Comment</h3>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <form method="post" class="form-group padding-small">
+                      <div class="row">
+                        <div class="col-lg-12 mb-3">
+                          <textarea class="form-control ps-3 pt-3" id="comment" name="comment"
+                            placeholder="Write your comment here *"></textarea>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                          <input class="form-control ps-3" type="text" name="author" id="author"
+                            placeholder="Write your full name here *">
+                        </div>
+                        <div class="col-lg-6">
+                          <input class="form-control ps-3" type="email" name="email" id="email"
+                            placeholder="Write your e-mail address *">
+                        </div>
+                        <div class="col-lg-12">
+                          <label class="d-flex align-items-center">
+                            <input type="checkbox" class="checked-box me-2">
+                            <span class="label-body">Save my name, email, and website in this browser for the next
+                              time.</span>
+                          </label>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+                          <button class="btn btn-lg btn-primary text-uppercase btn-rounded-none w-100"
+                            type="submit">Post Comment</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <aside class="col-md-3">
+          <div class="post-sidebar">
+            <form role="search" method="get" action="" class="mb-5">
+              <div class="wp-block-search d-flex border p-2">
+                <input type="search" class="form-control border-0 focus-ring-light" name="s" value=""
+                  placeholder="Search" required="">
+                <button type="submit" class="border-0 bg-transparent"><i class="icon icon-search"></i></button>
+              </div>
+            </form>
+            <div class="widget sidebar-categories border-animation-left mb-5">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Categories</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="item-anchor">All</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Bike</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Car</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Bus</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Mini-van</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Truck</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Cargo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget block-tag mb-5">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Tags</h5>
+              <ul class="list-unstyled d-flex flex-wrap gap-2">
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Car Wash</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Washing</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Cleaning</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-secondary">Modify</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget sidebar-recent-post mb-5">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Recent Posts</h5>
+              <div class="sidebar-post-item d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="image-holder">
+                      <a href="#">
+                        <img src="images/project1.jpg" alt="blog" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="sidebar-post-content text-uppercase">
+                      <div class="post-meta fs-6 text-secondary">
+                        <span class="meta-date">jul 11, 2022</span>
+                      </div>
+                      <h6 class="post-title">
+                        <a href="#">How to clean car properly</a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-post-item d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="image-holder">
+                      <a href="#">
+                        <img src="images/project4.jpg" alt="blog" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="sidebar-post-content text-uppercase">
+                      <div class="post-meta fs-6 text-secondary">
+                        <span class="meta-date">jul 18, 2022</span>
+                      </div>
+                      <h6 class="post-title">
+                        <a href="#">Top 10 hacks for cleaning </a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-post-item d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="image-holder">
+                      <a href="#">
+                        <img src="images/project3.jpg" alt="blog" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="sidebar-post-content text-uppercase">
+                      <div class="post-meta fs-6 text-secondary">
+                        <span class="meta-date">Aug 21, 2022</span>
+                      </div>
+                      <h6 class="post-title">
+                        <a href="#">Best ways to clean your car</a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widget sidebar-social-links border-animation-left">
+              <h5 class="widget-title text-uppercase border-bottom pb-3 mb-3">Follow us:</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="item-anchor">Facebook</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Twitter</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Pinterest</a>
+                </li>
+                <li>
+                  <a href="#" class="item-anchor">Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <section class="related-post post-wrap py-4">
+    <div class="container">
+      <div class="section-header d-flex align-items-center justify-content-between">
+        <h2 class="section-title text-uppercase mb-5">Related Posts</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="post-item pb-5">
+            <div class="post-image">
+              <a href="blog-single.html"><img src="images/blog5.jpg" class="img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <a href="" class="text-decoration-none">
+                <p class="blog-topic text-uppercase mt-3">Cars / 12 jan, 2022</p>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <h4 class="blog-title my-3">Main thing to remember while washing car</h4>
+              </a>
+              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
+                fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item pb-5">
+            <div class="post-image">
+              <a href="blog-single.html"><img src="images/blog6.jpg" class="img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <a href="" class="text-decoration-none">
+                <p class="blog-topic text-uppercase mt-3">Cars / 12 jan, 2022</p>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <h4 class="blog-title my-3">Main thing to remember while washing car</h4>
+              </a>
+              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
+                fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item pb-5">
+            <div class="post-image">
+              <a href="blog-single.html"><img src="images/blog1.jpg" class="img-fluid"></a>
+            </div>
+            <div class="post-content">
+              <a href="" class="text-decoration-none">
+                <p class="blog-topic text-uppercase mt-3">Cars / 12 jan, 2022</p>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <h4 class="blog-title my-3">Main thing to remember while washing car</h4>
+              </a>
+              <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
+                fringilla...</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="container footer-containerG mt-5 mt-md-0 pt-3">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+        <div class=" col-md-3 my-5 mt-md-0 ">
+          <img src="images/logo-dark.png" alt="" class="">
+          <p class="my-4">Velit sed ante in nisl amet sapien. Mauris a ullamcorper ut iaculis. Et massa non eu
+            ac tristique assa non eu ac tristique.</p>
+          <div class="d-flex align-items-center ">
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer active pe-4"
+                icon="mdi:facebook"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:twitter"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:instagram"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:linkedin"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:youtube"></iconify-icon></a>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 offset-md-1">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">About us</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">About
+                us</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">WHo are
+                we</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Why
+                choose us</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Our
+                history</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">Our services</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Our
+                history</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Tiring
+                dressing</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Wheel
+                shine</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Interior
+                vacuum</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 ">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">Contact us</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Our
+                location</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Contact</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Address</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 ">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">More info</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">VEhicle</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">bike</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Scooter</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </footer>
+    </div>
+
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+        <div class="col-md-6 d-flex align-items-center">
+          <p>© 2023 Turbo, Carwash | All Rights Reserved</p>
+
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+          <p class="">© 2023 Designed By:<a href="https://templatesjungle.com/"
+              class="website-link text-decoration-none" target="_blank"> <b>TemplatesJungle</b></a></p>
+        </div>
+
+      </footer>
+    </div>
+  </section>
+
+
+
+  <!-- script ================================================== -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>

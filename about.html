@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Supreme Nomads Detailing - Charlotte - Mobile Auto Detailing</title>
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Oswald:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+    <!-- Nav -->
+    <nav class="navbar fixed-top navbar-expand-xl container-fluid">
+      <!-- Logo -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/horizontal-logo.png" alt="logo"
+        /></a>
+
+        <!-- Mobile Layout -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <iconify-icon
+            icon="system-uicons:menu-hamburger"
+            class="hamburger-menu"
+          ></iconify-icon>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+              Supreme Nomads
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body" >
+            <!-- Routes -->
+            <ul
+              class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3 ms-lg-5"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-uppercase active mx-2 px-1 mb-2 mb-lg-0"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
+                  href="project.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
+                  href="services.html"
+                  >Our Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
+                  href="services-single.html"
+                  >Academy</a
+                >
+              </li>
+            </ul>
+
+            <!-- Socials -->
+            <div
+              class="d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end social-nav"
+            >
+              <ul
+                class="d-flex flex-row gap-2 list-unstyled mb-0 social-div"
+              >
+              <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" href="https://www.tiktok.com/@supremenomads704"
+              target="_blank"
+              rel="noopener noreferrer">
+                    <iconify-icon
+                      icon="ri:tiktok-fill"
+                      class="social-icon text-white"
+                    ></iconify-icon>
+                  </a>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" href="https://www.instagram.com/supremenomads"
+              target="_blank"
+              rel="noopener noreferrer">
+                    <iconify-icon
+                      icon="ri:instagram-line"
+                      class="social-icon text-white"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" href="#">
+                    <iconify-icon
+                      icon="ri:facebook-fill"
+                      class="social-icon text-white"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" href="https://www.facebook.com/Supremenomads/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="openFacebook(event)">
+                    <iconify-icon
+                      icon="mdi:yelp"
+                      class="social-icon text-white"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" href="#">
+                    <iconify-icon
+                      icon="ri:youtube-fill"
+                      class="social-icon text-white"
+                    ></iconify-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Book Now -->
+            <div>
+            <a href="booking.html" class="btn btn-primary book-now-btn w-100 w-xl-auto ms-0 ms-xl-3">
+              Book Now
+            </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" style="background-image:url(images/banner2-img.jpg);">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div
+                    class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white">
+                    <h2 class="page-title display-3 mt-5 text-white">About Us</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="my-5 py-5">
+        <div style="overflow: hidden;">
+            <div class="vertical-element" data-aos="zoom-out">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6">
+                            <div class="image-holder">
+                                <img src="images/blog1.jpg" alt="about-us">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="section-element p-5">
+                                <h2 class="element-title text-uppercase mb-4">Who are we?</h2>
+                                <p>The beginning of our journey vel tellus Turpis purus, gravida orci, fringilla a. Ac
+                                    sed
+                                    eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit
+                                    libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis
+                                    donec dolor id in. Pulvinar commodo mollis diam sed facilisis at magna imperdiet
+                                    cursus
+                                    ac faucibus sit libero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="overflow: hidden;">
+            <div class="vertical-element mt-5 py-5" data-aos="zoom-out">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-6">
+                            <div class="section-element p-5">
+                                <h2 class="element-title text-uppercase mb-4">Choose us for best services</h2>
+                                <p>We are nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id
+                                    in.
+                                    Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus ac faucibus sit
+                                    libero. Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida
+                                    orci,
+                                    fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet
+                                    cursus
+                                    ac faucibus sit libero.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image-holder text-right">
+                                <img src="images/blog2.jpg" alt="about-us">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Team Info -->
+    <section id="team">
+      <div style="overflow: hidden">
+        <div class="container my-5 py-5" data-aos="zoom-out">
+          <p class="header-top text-center mb-3">Meet our team</p>
+          <h2 class="display-4 text-center">Our Team Members</h2>
+
+          <!-- Team Member 1 -->
+          <div class="row align-items-center my-5 mx-auto">
+            <div class="col-md-6 text-center">
+              <img
+                src="images/team1.jpg"
+                class="img-fluid"
+                alt="James Parker"
+              />
+              <div
+                class="social-links mt-3 d-flex justify-content-center gap-3"
+              >
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:facebook-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:instagram-line"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:twitter-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:youtube-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:linkedin-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 text-center">
+              <h5 class="element-title text-uppercase mt-3">Akash</h5>
+              <h6 class="heading-color">Co-CEO</h6>
+              <p>
+                I was born and raised in New Jersey. I’ve moved around a lot and
+                have even lived in Texas for a couple of years. I finished high
+                school in Cary, NC and have lived in Charlotte since 2015. I
+                majored in Computer Science at University of North Carolina at
+                Charlotte Class of ‘19 and have a masters in Data Science and
+                Business Analytics ‘20. Since my childhood, I have always been
+                interested in 2 things. Cars, and tech. After working in the
+                tech industry for several years, I decided to pursue my other
+                passion for cars. I learned to work on my 2006 Honda Civic in
+                college to save money, especially because I couldn’t afford to
+                pay for a new starter when it went out and I had to get to
+                classes. Today that vehicle has over 300,000 miles and I’ve
+                helped countless other friends with oil changes, and other
+                diagnostic and maintenance items for their vehicles. But
+                detailing has always stuck out to me because no matter how far
+                you go with it, you can never be perfect. Because of the nature
+                of detailing, you create your own definition of done. As someone
+                who chases perfection, detailing will always challenge me and
+                push me to get closer to perfect, while also striving for
+                efficiency with every car we work on. I met Tenzin in 2023
+                through a mutual friend, and realized I’d found someone with the
+                same mindset and attitude about detailing. And from there, the
+                rest is history.
+              </p>
+            </div>
+          </div>
+
+          <!-- Team Member 2 (Alternate Layout) -->
+          <div
+            class="row align-items-center flex-md-row-reverse my-5 mx-auto"
+            style="max-width: 1000px"
+          >
+            <div class="col-md-6 text-center">
+              <img src="images/team2.jpg" class="img-fluid" alt="Andey Wales" />
+              <div
+                class="social-links mt-3 d-flex justify-content-center gap-3"
+              >
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:facebook-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:instagram-line"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:twitter-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:youtube-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+                <a href="#"
+                  ><iconify-icon
+                    icon="ri:linkedin-fill"
+                    class="social-icon text-secondary"
+                  ></iconify-icon
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 text-center">
+              <h5 class="element-title text-uppercase mt-3">Tenzin</h5>
+              <h6 class="heading-color">Co-CEO</h6>
+              <p>
+                Odio a faucibus cras lacus felis in enim. In tincidunt in tortor
+                ligula risus nulla blandit. Amet nisi iaculis suspendisse
+                fermentum curabitur feugiat. Velit sed ante in nisl amet sapien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Footer -->
+    <section id="footer">
+      <div class="container footer-containerG mt-5 mt-md-0 pt-3">
+  <footer class="row my-5 py-5">
+    
+    <!-- Logo & Contact -->
+    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center text-lg-start">
+      <img src="images/horizontal-logo.png" alt="Supreme" class="footer-logo" />
+      <h5 class="mobile footer-heading1">Mobile Detailing Unit</h5>
+      <h6 class="mobile footer-heading2">We come to you!</h6>
+      <div class="contact-info mt-3">
+        <p class="mb-1">
+          <a href="tel:+1704-561-1927" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+            <iconify-icon icon="mdi:phone" style="vertical-align: middle; margin-right: 6px;"></iconify-icon>704-561-1927
+          </a>
+        </p>
+        <p>
+          <a href="mailto:info@supremenomads.com" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+            <iconify-icon icon="mdi:email" style="vertical-align: middle; margin-right: 6px;"></iconify-icon>info@supremenomads.com
+          </a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-center justify-content-lg-start align-items-center mt-3">
+        <!-- social icons -->
+          <a
+                href="https://www.tiktok.com/@supremenomads704"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><iconify-icon
+                  class="social-icon-footer pe-4"
+                  icon="ri:tiktok-fill"
+                ></iconify-icon
+              ></a>
+              <a
+                href="https://www.instagram.com/supremenomads"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><iconify-icon
+                  class="social-icon-footer pe-4"
+                  icon="mdi:instagram"
+                ></iconify-icon
+              ></a>
+              <a
+                href="https://www.facebook.com/Supremenomads/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="openFacebook(event)"
+                ><iconify-icon
+                  class="social-icon-footer pe-4"
+                  icon="mdi:facebook"
+                ></iconify-icon
+              ></a>
+              <a
+                href="https://www.yelp.com/biz/supreme-nomads-detailing-charlotte"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><iconify-icon
+                  class="social-icon-footer pe-4"
+                  icon="mdi:yelp"
+                ></iconify-icon
+              ></a>
+              <a href="#" target="_blank"
+                ><iconify-icon
+                  class="social-icon-footer pe-4"
+                  icon="mdi:youtube"
+                ></iconify-icon
+              ></a>
+      </div>
+    </div>
+
+    <!-- Pages / Quick Links -->
+    <div class="col-12 col-md-6 col-lg-2 mb-4 mb-lg-0 text-center text-lg-start">
+      <h5 class="fs-5 mt-3 mt-lg-0 mb-3">Quick Links</h5>
+      <ul class="navbar-nav flex-column mx-auto d-inline-block">
+        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0">Home</a></li>
+        <li class="nav-item footer-list mb-3"><a href="project.html" class="nav-link text-uppercase p-0">Gallery</a></li>
+        <li class="nav-item footer-list mb-3"><a href="services.html" class="nav-link text-uppercase p-0">Our Services</a></li>
+        <li class="nav-item footer-list mb-3"><a href="about.html" class="nav-link text-uppercase p-0">About Us</a></li>
+        <li class="nav-item footer-list mb-3"><a href="services-single.html" class="nav-link text-uppercase p-0">Academy</a></li>
+      </ul>
+    </div>
+
+    <!-- Cities -->
+<div class="col-12 col-lg-7 text-center text-lg-start">
+  <h5 class="fs-5 mt-3 mt-lg-0 mb-3">We Serve</h5>
+  <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3 justify-content-center">
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Charlotte</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Concord</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Harrisburg</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Huntersville</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Matthews</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Waxhaw</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Fort Mill, SC</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Indian Land, SC</a></div>
+    <div class="col"><a href="#" class="nav-link text-uppercase p-0">Rockhill, SC</a></div>
+  </div>
+</div>
+
+  </footer>
+</div>
+        </footer>
+      </div>
+
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center border-top"
+      ></footer>
+
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4"
+        >
+          <div class="col-md-6 d-flex align-items-center">
+            <p>© 2021 - 2025 | All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-end">
+            <p>Supreme Nomads Detailing LLC</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>

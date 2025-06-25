@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbo - Car Wash Free Bootstrap5 HTML Website Template</title>
+
+  <!--vendor css ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!--Bootstrap ================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Style Sheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+  <nav class="navbar fixed-top navbar-expand-lg container-fluid p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/main-logo-light.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  active mx-2 px-3 mb-2 mb-lg-0" aria-current="page"
+                href="index.html">home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white text-uppercase mx-2 px-3 mb-2 mb-lg-0 dropdown-toggle"
+                data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" href="#">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html" class="dropdown-item text-uppercase ">About <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="blog.html" class="dropdown-item text-uppercase ">Blog <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="blog-single.html" class="dropdown-item text-uppercase ">Blog-Single <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="booking.html" class="dropdown-item text-uppercase ">Booking <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="services.html" class="dropdown-item text-uppercase ">Services <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="services-single.html" class="dropdown-item text-uppercase ">Service-Single
+                    <span class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="project.html" class="dropdown-item text-uppercase ">Project <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="pricing.html" class="dropdown-item text-uppercase ">Pricing <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="contact.html" class="dropdown-item text-uppercase ">Contact <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="team.html" class="dropdown-item text-uppercase ">Our Team <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="review.html" class="dropdown-item text-uppercase ">Reviews <span
+                      class="badge bg-secondary">Pro</span></a></li>
+                <li><a href="faq.html" class="dropdown-item text-uppercase ">FAQs <span
+                      class="badge bg-secondary">Pro</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">Contact</a>
+            </li>
+
+          </ul>
+
+          <div class="  d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end ">
+            <ul class="navbar-nav social-div justify-content-end align-items-center">
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:facebook-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:instagram-line" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:twitter-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:linkedin-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <iconify-icon icon="ri:youtube-fill" class="social-icon text-white"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" style="background-image:url(images/banner6-img.jpg);">
+    <div class="container py-5">
+      <div class="row">
+        <div class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white">
+          <h2 class="page-title display-3 mt-5 text-white">FAQs</h2>
+          <nav class="breadcrumb">
+            <a class="breadcrumb-item text-white" href="index.html">Home</a>
+            <span class="breadcrumb-item active text-white" aria-current="page">FAQs</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faqs-wrap py-5 no-padding-bottom">
+    <div style="overflow: hidden;">
+      <div class="container" data-aos="zoom-out">
+        <div class="row g-5 my-4">
+          <main class="col-md-8">
+            <h3 class="section-title text-uppercase">Frequently asked questions</h3>
+            <p>Malesuada nunc vel risus commodo viverra. Viverra accumsan in nisl nisi. Pretium nibh ipsum consequat
+              nisl
+              vel pretium. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing.</p>
+            <div class="page-content my-5">
+
+              <div class="accordion" id="accordion-box">
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-one">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                      <h3 class="accordion-title fs-5">How to Book the time?</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-one" class="accordion-collapse collapse show" aria-labelledby="heading-one">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-two">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-two" aria-expanded="true" aria-controls="collapse-two">
+                      <h3 class="accordion-title fs-5">Should wash all parts compulsory?</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="heading-two">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-three">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
+                      <h3 class="accordion-title fs-5">Can i get discounts in wash?</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="heading-three">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-four">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-four" aria-expanded="true" aria-controls="collapse-four">
+                      <h3 class="accordion-title fs-5">What informations should i need to provide when booking?</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-four" class="accordion-collapse collapse" aria-labelledby="heading-four">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-five">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-five" aria-expanded="true" aria-controls="collapse-five">
+                      <h3 class="accordion-title fs-5">Can i cancel my appoitment?</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-five" class="accordion-collapse collapse" aria-labelledby="heading-five">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-six">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-six" aria-expanded="true" aria-controls="collapse-six">
+                      <h3 class="accordion-title fs-5">What’s your refund policy</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-six" class="accordion-collapse collapse" aria-labelledby="heading-six">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-seven">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-seven" aria-expanded="true" aria-controls="collapse-seven">
+                      <h3 class="accordion-title fs-5">I haven’t received my appoitment details</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-seven" class="accordion-collapse collapse" aria-labelledby="heading-seven">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-eight">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-eight" aria-expanded="true" aria-controls="collapse-eight">
+                      <h3 class="accordion-title fs-5">How is wash charge determined?</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-eight" class="accordion-collapse collapse" aria-labelledby="heading-eight">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-3 ">
+                  <div class="accordion-header" id="heading-nine">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-nine" aria-expanded="true" aria-controls="collapse-nine">
+                      <h3 class="accordion-title fs-5">Where is your shop located?</h3>
+                    </button>
+                  </div>
+                  <div id="collapse-nine" class="accordion-collapse collapse" aria-labelledby="heading-nine">
+                    <div class="accordion-body">
+                      <div class="faqs-box">
+                        <div class="element-box margin-xsmall d-flex align-items-center">
+                          <div class="item-title">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                            Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis
+                            facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque
+                            felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <div class="inquiry-item col-md-4">
+            <h3 class="section-title mb-3">Ask us anything</h3>
+            <p>Call Us +123 987 456 or just drop us your message at <a
+                href="mailto:contact@yourcompany.com">contact@yourcompany.com</a>. You can directly message us. </p>
+            <form id="form" class="form-group flex-wrap">
+              <div class="form-input col-lg-12 d-flex mb-3">
+                <input type="text" name="email" placeholder="Write Your Name Here" class="form-control ps-3 me-3">
+                <input type="text" name="email" placeholder="Write Your Email Here" class="form-control ps-3">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <input type="text" name="email" placeholder="Phone Number" class="form-control ps-3">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <input type="text" name="email" placeholder="Write Your Subject Here" class="form-control ps-3">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <textarea placeholder="Write Your Message Here" class="form-control ps-3" rows="8"></textarea>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-lg text-uppercase btn-rounded-none">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="video">
+    <div style="overflow: hidden;">
+      <div class="video-content position-relative open-up" data-aos="zoom-out">
+        <div class="video-bg">
+          <img src="images/vid-img.jpg" alt="video" class="video-image img-fluid">
+        </div>
+        <div class="video-player position-absolute">
+          <a class='youtube' href="https://www.youtube.com/embed/RLHSvmh4rHw">
+            <iconify-icon icon="ion:play-sharp" class="video-icon p-5"></iconify-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info">
+    <div style="overflow: hidden;">
+      <div class="container" data-aos="zoom-out">
+        <div class="row align-items-center ">
+          <div class="col-md-4 text-center padding-medium border-end">
+            <p class="header-top mb-4">Why choose us</p>
+            <p class="mb-2">+123 222 333 44</p>
+            <p class="mb-2">+123 666 777 88</p>
+          </div>
+          <div class="col-md-4 text-center padding-medium border-end">
+            <p class="header-top mb-4">Working hours</p>
+            <p class="mb-2">Mon - Fri: 6 am - 6 pm</p>
+            <p class="mb-2">Sun - Sat: 9 am - 4 pm</p>
+          </div>
+          <div class="col-md-4 text-center padding-medium">
+            <p class="header-top mb-4">Our address</p>
+            <p class="mb-2">13 Rue Montmartre 75001, Paris, France</p>
+            <p class="mb-2">13 Rue Martre 75001, Paris, France</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="container footer-containerG mt-5 mt-md-0 pt-3">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+        <div class=" col-md-3 my-5 mt-md-0 ">
+          <img src="images/logo-dark.png" alt="" class="">
+          <p class="my-4">Velit sed ante in nisl amet sapien. Mauris a ullamcorper ut iaculis. Et massa non eu
+            ac tristique assa non eu ac tristique.</p>
+          <div class="d-flex align-items-center ">
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer active pe-4"
+                icon="mdi:facebook"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:twitter"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:instagram"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:linkedin"></iconify-icon></a>
+            <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                icon="mdi:youtube"></iconify-icon></a>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 offset-md-1">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">About us</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">About
+                us</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">WHo are
+                we</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Why
+                choose us</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Our
+                history</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">Our services</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Our
+                history</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Tiring
+                dressing</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Wheel
+                shine</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Interior
+                vacuum</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 ">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">Contact us</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Our
+                location</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Contact</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Address</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 ">
+          <h5 class="fs-5 mt-3 mt-md-0 mb-3">More info</h5>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">VEhicle</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">bike</a>
+            </li>
+            <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Scooter</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </footer>
+    </div>
+
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+        <div class="col-md-6 d-flex align-items-center">
+          <p>© 2023 Turbo, Carwash | All Rights Reserved</p>
+
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+          <p class="">© 2023 Designed By:<a href="https://templatesjungle.com/"
+              class="website-link text-decoration-none" target="_blank"> <b>TemplatesJungle</b></a></p>
+        </div>
+
+      </footer>
+    </div>
+  </section>
+
+
+
+  <!-- script ================================================== -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>
