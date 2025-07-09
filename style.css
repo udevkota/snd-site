@@ -564,12 +564,10 @@ button.filter-button:hover {
   background-color: #f51fb5 !important;
 }
 
-
 /* Inline Text */
 .navbar-nav .nav-link {
   white-space: nowrap;
 }
-
 
 /* Hero */
 .sndName {
@@ -596,7 +594,7 @@ button.filter-button:hover {
 
 /* Quick Links */
 #about,
-#about-us{
+#about-us {
   background-color: #dec49a;
 }
 
@@ -620,10 +618,9 @@ button.filter-button:hover {
 }
 
 /* Footer logo */
-.footer-logo{
+.footer-logo {
   width: 20%;
   padding-bottom: 4rem;
-  
 }
 
 /* Mobile Price Horizontal Scrolling */
@@ -637,23 +634,23 @@ button.filter-button:hover {
     gap: 1rem;
     padding-bottom: 1rem;
   }
-  
+
   .tab-content .row .col-lg-3 {
-    flex: 0 0 280px; 
+    flex: 0 0 280px;
     max-width: 280px;
     scroll-snap-align: start;
   }
-  
+
   .plan-post {
     height: 100%;
-    min-height: 500px; 
+    min-height: 500px;
   }
-  
+
   /* Hide scrollbar but keep functionality */
   .tab-content .row::-webkit-scrollbar {
     display: none;
   }
-  
+
   .tab-content .row {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -666,7 +663,7 @@ button.filter-button:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 600px; 
+  min-height: 600px;
   padding: 2rem 1rem;
   border: 1px solid #e9ecef;
   border-radius: 8px;
@@ -699,15 +696,15 @@ button.filter-button:hover {
   hyphens: auto;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   gap: 0.5rem;
-  text-align: left; 
+  text-align: left;
 }
 
 .price-option .bullet-icon {
   flex-shrink: 0;
   margin-top: 0.1rem;
-  align-self: flex-start; 
+  align-self: flex-start;
 }
 
 /* Make sure the text content itself aligns left */
@@ -739,11 +736,11 @@ button.filter-button:hover {
     min-height: 550px;
     padding: 1.5rem 1rem;
   }
-  
+
   .price-option p {
     font-size: 0.8rem;
   }
-  
+
   .display-5 {
     font-size: 1.5rem;
   }
@@ -763,9 +760,10 @@ button.filter-button:hover {
 .tooltip-inner {
   max-width: 400px; /* Default is 200px */
   width: max-content;
-  background-color:#1f1f1f;
+  background-color: #1f1f1f;
 }
 
-.paint-packages{
+.paint-packages,
+.maintenance-packages {
   border-top: 2px #1452a2 solid;
 }
