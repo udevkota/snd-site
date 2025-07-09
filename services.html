@@ -45,6 +45,14 @@
         /></a>
 
         <!-- Mobile Layout -->
+         <div class="d-flex align-items-center gap-3 d-xl-none">
+  <a href="tel:+17045611927" class="text-white pt-2">
+    <iconify-icon
+      icon="ic:baseline-call"
+      class="call-icon"
+      style="font-size: 1.5rem;"
+    ></iconify-icon>
+  </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,6 +65,8 @@
             class="hamburger-menu"
           ></iconify-icon>
         </button>
+      </div>
+
         <div
           class="offcanvas offcanvas-end"
           tabindex="-1"
@@ -78,11 +88,11 @@
           <div class="offcanvas-body" >
             <!-- Routes -->
             <ul
-              class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3 ms-lg-5"
+              class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1"
             >
               <li class="nav-item">
                 <a
-                  class="nav-link text-white text-uppercase active mx-2 px-1 mb-2 mb-lg-0"
+                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
                   aria-current="page"
                   href="index.html"
                   >Home</a
@@ -97,7 +107,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
+                  class="nav-link text-white text-uppercase active mx-2 px-1 mb-2 mb-lg-0"
                   href="services.html"
                   >Our Services</a
                 >
@@ -119,12 +129,22 @@
             </ul>
 
             <!-- Socials -->
-            <div
-              class="d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end social-nav"
+            <div 
+              class="d-flex mt-lg-0 align-items-center justify-content-center offcanvas-body social-div"
             >
               <ul
-                class="d-flex flex-row gap-2 list-unstyled mb-0 social-div"
+                class="d-flex flex-row gap-2 list-unstyled mb-0 social-ul"
               >
+              <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" href="tel:+17045611927"
+              target="_blank"
+              rel="noopener noreferrer">
+                    <iconify-icon
+                      icon="ic:baseline-call"
+                      class="social-icon text-white"
+                    ></iconify-icon>
+                  </a>
+                </li>
               <li class="nav-item">
                   <a class="nav-link d-flex align-items-center" href="https://www.tiktok.com/@supremenomads704"
               target="_blank"
@@ -134,6 +154,7 @@
                       class="social-icon text-white"
                     ></iconify-icon>
                   </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center" href="https://www.instagram.com/supremenomads"
               target="_blank"
@@ -176,7 +197,7 @@
             </div>
             
             <!-- Book Now -->
-            <div>
+            <div class="book-now-div">
             <a href="booking.html" class="btn btn-primary book-now-btn w-100 w-xl-auto ms-0 ms-xl-3">
               Book Now
             </a>
@@ -199,11 +220,12 @@
         </div>
     </section>
 
-    <section id="price" class="my-5">
+  <!-- Detailing Plan -->
+        <section id="price" class="my-5">
       <div style="overflow: hidden">
         <div class="container py-5" data-aos="zoom-out">
           <p class="header-top">Pricing plans</p>
-          <h2 class="display-4 mb-5">Our Services</h2>
+          <h2 class="display-4 mb-5">Our Detailing Packages</h2>
 
           <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -260,19 +282,53 @@
               <div class="row py-4">
                 <div class="col-lg-3 pb-4">
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Express</p>
-                    <h2 class="display-5">$125+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                    <p class="header-top">Premium</p>
+                    <h2 class="display-5">$300+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath and Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wash Wheel Surfaces and Inner Barrel</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Door Jambs Washed</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo and Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect & Sanitize Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 pb-4">
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Exterior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -286,18 +342,19 @@
                   <div class="py-5 plan-post text-center">
                     <p class="header-top">Interior</p>
                     <h2 class="display-5">$160+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -309,48 +366,22 @@
 
                 <div class="col-lg-3 pb-4">
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Exterior+</p>
-                    <h2 class="display-5">$160+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                    <p class="header-top">Express</p>
+                    <h2 class="display-5">$125+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Basic Wax Coating*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface and Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Dash/Vents/Trims/Panels Wipe Down</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Interior Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows Only</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="col-lg-3 pb-4">
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Premium</p>
-                    <h2 class="display-5">$300+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> It ir ivamus</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> lit mir iamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -376,19 +407,26 @@
                   data-aos-delay="0"
                 >
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Express</p>
-                    <h2 class="display-5">$150+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                    <p class="header-top">Premium</p>
+                    <h2 class="display-5">$350+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath and Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wash Wheel Surfaces and Inner Barrel</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Door Jambs Washed</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo and Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect & Sanitize Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -404,20 +442,22 @@
                   data-aos-delay="300"
                 >
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Interior</p>
-                    <h2 class="display-5">$180+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                   <p class="header-top">Exterior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -433,21 +473,21 @@
                   data-aos-delay="600"
                 >
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Exterior</p>
-                    <h2 class="display-5">$180+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                    <p class="header-top">Interior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -463,22 +503,22 @@
                   data-aos-delay="900"
                 >
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Premium</p>
-                    <h2 class="display-5">$350+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> It ir ivamus</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> lit mir iamus</p>
+                    <p class="header-top">Express</p>
+                    <h2 class="display-5">$125+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Basic Wax Coating*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface and Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Dash/Vents/Trims/Panels Wipe Down</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Interior Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows Only</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -504,19 +544,26 @@
                   data-aos-delay="0"
                 >
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Express</p>
-                    <h2 class="display-5">$175+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
+                   <p class="header-top">Premium</p>
+                    <h2 class="display-5">$400+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath and Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wash Wheel Surfaces and Inner Barrel</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Door Jambs Washed</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo and Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect & Sanitize Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -530,148 +577,23 @@
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
                   data-aos-delay="300"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Interior</p>
-                    <h2 class="display-5">$200+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="600"
                 >
                   <div class="py-5 plan-post text-center">
                     <p class="header-top">Exterior</p>
-                    <h2 class="display-5">$200+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Ipsum dolor</p>
-                    </div>
-
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>         
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="900"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Premium</p>
-                    <h2 class="display-5">$400+</h2>
-                    <h6 class="hours mb-5">1 Hour</h6>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> It ir ivamus</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> lit mir iamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="truck-tab-pane"
-              role="tabpanel"
-              aria-labelledby="truck-tab"
-              tabindex="0"
-            >
-              <div class="row py-4">
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="0"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Basic</p>
-                    <h2 class="display-5 mb-5">$30.95</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="300"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Deluxe</p>
-                    <h2 class="display-5 mb-5">$40.50</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -687,20 +609,21 @@
                   data-aos-delay="600"
                 >
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">Ultimate</p>
-                    <h2 class="display-5 mb-5">$68.40</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Ipsum dolor</p>
+                     <p class="header-top">Interior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
                     </div>
 
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -716,145 +639,21 @@
                   data-aos-delay="900"
                 >
                   <div class="py-5 plan-post text-center">
-                    <p class="header-top">ultra ultimate</p>
-                    <h2 class="display-5 mb-5">$101.50</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> It ir ivamus</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> lit mir iamus</p>
+                    <p class="header-top">Express</p>
+                    <h2 class="display-5">$125+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick "></iconify-icon> Basic Wax Coating*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface and Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Dash/Vents/Trims/Panels Wipe Down</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Interior Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows Only</p>
                     </div>
-
                     <a
                       href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="cargo-tab-pane"
-              role="tabpanel"
-              aria-labelledby="cargo-tab"
-              tabindex="0"
-            >
-              <div class="row py-4">
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="0"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Basic</p>
-                    <h2 class="display-5 mb-5">$50.95</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="300"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Deluxe</p>
-                    <h2 class="display-5 mb-5">$78.50</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="600"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">Ultimate</p>
-                    <h2 class="display-5 mb-5">$97.40</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Ipsum dolor</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
-                      >Book now
-                      <iconify-icon
-                        icon="tabler:arrow-right"
-                        class="arrow-icon"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-3 col-6 pb-4"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-delay="900"
-                >
-                  <div class="py-5 plan-post text-center">
-                    <p class="header-top">ultra ultimate</p>
-                    <h2 class="display-5 mb-5">$150.50</h2>
-                    <div class="price-option">
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> Lorem ipsum dolor</p>
-                      <p><span class="price-tick">✓</span> Vivamus velit mir</p>
-                      <p><span class="price-tick">✓</span> It ir ivamus</p>
-                      <p><span class="price-tick">✓</span> Elit mir ivamus</p>
-                      <p><span class="price-tick">✓</span> Quisque rhoncus</p>
-                      <p><span class="price-tick">✓</span> lit mir iamus</p>
-                    </div>
-
-                    <a
-                      href="booking.html"
-                      class="btn btn-primary mt-3 px-4 py-3 mx-2"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
                       >Book now
                       <iconify-icon
                         icon="tabler:arrow-right"
@@ -870,6 +669,788 @@
       </div>
     </section>
 
+    <!-- Paint Protection Packages -->
+        <section id="price" class="my-5 paint-packages">
+      <div style="overflow: hidden">
+        <div class="container py-5" data-aos="zoom-out">
+          <p class="header-top">Pricing plans</p>
+          <h2 class="display-4 mb-5">Our Paint Protection Packages</h2>
+
+          <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link me-4 px-4 py-1 mb-2 active"
+                id="regular-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#regular-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="regular-tab-pane"
+                aria-selected="true"
+              >
+                Sedan
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link me-4 px-4 py-1 mb-2"
+                id="medium-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#medium-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="medium-tab-pane"
+                aria-selected="false"
+              >
+                2 Row Suv/Small Truck
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link me-4 px-4 py-1 mb-2"
+                id="van-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#van-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="van-tab-pane"
+                aria-selected="false"
+              >
+                3 Row Suv/Large Truck
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="regular-tab-pane"
+              role="tabpanel"
+              aria-labelledby="regular-tab"
+              tabindex="0"
+            >
+              <div class="row py-4">
+                <div class="col-lg-4 pb-4">
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Ceramic + Advance Ceramic<span data-bs-toggle="tooltip" data-bs-placement="top" title="Ceramic coatings are a protective layer applied to your vehicle's paint to protect and enhance the look of your vehicle and extend the life of your paint. Once we are done with our extensive decontamination wash process, we lock in using our ceramic coating to give your vehicle its best look possible. The ceramic coatings we use are designed to make your vehicle easy to wash and dry, and protect your paint's clear coat from contaminants such as tree sap, and brake dust. With regular maintenance, your vehicle should last anywhere between 5-7 years.">
+  ⓘ
+</span></p>
+                    <h2 class="display-5">$300+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Ceramic Coating</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 2-Step Paint Correction</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> One free additional maintenance wash!</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 pb-4">
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">PPF</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> NEEDS COPYWRIGHT</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 pb-4">
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Supreme Nomads Special</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 1-Step Paint Enhancement</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 1 Year Ceramic Sealant*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon>Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon>UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="medium-tab-pane"
+              role="tabpanel"
+              aria-labelledby="medium-tab"
+              tabindex="0"
+            >
+              <div class="row py-4">
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="0"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Premium</p>
+                    <h2 class="display-5">$350+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath and Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wash Wheel Surfaces and Inner Barrel</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Door Jambs Washed</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo and Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect & Sanitize Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="300"
+                >
+                  <div class="py-5 plan-post text-center">
+                   <p class="header-top">Exterior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="600"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Interior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="900"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Express</p>
+                    <h2 class="display-5">$125+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Basic Wax Coating*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface and Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Dash/Vents/Trims/Panels Wipe Down</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Interior Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows Only</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="van-tab-pane"
+              role="tabpanel"
+              aria-labelledby="van-tab"
+              tabindex="0"
+            >
+              <div class="row py-4">
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="0"
+                >
+                  <div class="py-5 plan-post text-center">
+                   <p class="header-top">Premium</p>
+                    <h2 class="display-5">$400+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath and Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wash Wheel Surfaces and Inner Barrel</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Door Jambs Washed</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo and Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect & Sanitize Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="300"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Exterior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>         
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="600"
+                >
+                  <div class="py-5 plan-post text-center">
+                     <p class="header-top">Interior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="900"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Express</p>
+                    <h2 class="display-5">$125+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick "></iconify-icon> Basic Wax Coating*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface and Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Dash/Vents/Trims/Panels Wipe Down</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Interior Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows Only</p>
+                    </div>
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maintenance Plans -->
+    <section id="price" class="my-5 maintenance-packages">
+      <div style="overflow: hidden">
+        <div class="container py-5" data-aos="zoom-out">
+          <p class="header-top">Pricing plans</p>
+          <h2 class="display-4 mb-5">Our Maintanence Packages</h2>
+          <p>Our maintenance plans are designed to keep your vehicle looking like the day you got it detailed for an extended period of time. Let us take care of your vehicle for a 6 or 12 month timeframe prepaid! Maintenance plans are only available with the paint protection packages* (star moves you to paint protection packages). Each wash must be scheduled within 40 days of the previous one or you lose the wash. If our calendar cannot accommodate the 40 day time frame, we will work with you to choose the next available slot.</p> 
+
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="regular-tab-pane"
+              role="tabpanel"
+              aria-labelledby="regular-tab"
+              tabindex="0"
+            >
+              <div class="row py-4">
+                <div class="col-lg-6 pb-4">
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">12 Washes</p>
+                    <h2 class="display-5">$800+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> NEEDS COPYWRIGHT</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 2-Step Paint Correction</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> One free additional maintenance wash!</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 pb-4">
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">6 Washes</p>
+                    <h2 class="display-5">$500+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> NEEDS COPYWRIGHT</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="medium-tab-pane"
+              role="tabpanel"
+              aria-labelledby="medium-tab"
+              tabindex="0"
+            >
+              <div class="row py-4">
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="0"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Premium</p>
+                    <h2 class="display-5">$350+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath and Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wash Wheel Surfaces and Inner Barrel</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Door Jambs Washed</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo and Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect & Sanitize Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="300"
+                >
+                  <div class="py-5 plan-post text-center">
+                   <p class="header-top">Exterior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="600"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Interior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="900"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Express</p>
+                    <h2 class="display-5">$125+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Basic Wax Coating*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface and Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Dash/Vents/Trims/Panels Wipe Down</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Interior Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows Only</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="van-tab-pane"
+              role="tabpanel"
+              aria-labelledby="van-tab"
+              tabindex="0"
+            >
+              <div class="row py-4">
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="0"
+                >
+                  <div class="py-5 plan-post text-center">
+                   <p class="header-top">Premium</p>
+                    <h2 class="display-5">$400+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath and Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wash Wheel Surfaces and Inner Barrel</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Door Jambs Washed</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo and Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect & Sanitize Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="300"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Exterior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> 6 Month Ceramic Wax*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Iron Removal Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Clay Treatment</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface, Barrel & Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows & Door Jams Cleaned</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Rain-X&reg; Window Treatment</p>
+                    </div>         
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="600"
+                >
+                  <div class="py-5 plan-post text-center">
+                     <p class="header-top">Interior</p>
+                    <h2 class="display-5">$160+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Shampoo & Conditioner</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Headliner Spot Cleaning</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Steam Interior Surfaces</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> UV Protect and Sanitize Dash/Vents/Trims/Panels</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Deep Interior & Trunk Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows and Door Jams Cleaned</p>
+                    </div>
+
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 pb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="900"
+                >
+                  <div class="py-5 plan-post text-center">
+                    <p class="header-top">Express</p>
+                    <h2 class="display-5">$125+</h2>
+                    <div class="price-option mt-3">
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick "></iconify-icon> Basic Wax Coating*</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Wheel Surface and Tire Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Tire Dressing</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Foam Bath & Hand Wash</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Seats & Carpets Sanitized</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Dash/Vents/Trims/Panels Wipe Down</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Interior Vacuum</p>
+                      <p><iconify-icon icon="mdi:square-medium" class="bullet-icon price-tick"></iconify-icon> Windows Only</p>
+                    </div>
+                    <a
+                      href="booking.html"
+                      class="btn btn-primary mt-3 px-4 py-3 mx-2 book-now-btn-links"
+                      >Book now
+                      <iconify-icon
+                        icon="tabler:arrow-right"
+                        class="arrow-icon"
+                      ></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Add ons -->
     <section id="process" class="my-5">
       <div style="overflow: hidden">
         <div class="container mt-5 pt-5" data-aos="zoom-out">
@@ -1023,8 +1604,8 @@
   <footer class="row my-5 py-5">
     
     <!-- Logo & Contact -->
-    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center text-lg-start">
-      <img src="images/horizontal-logo.png" alt="Supreme" class="footer-logo" />
+    <div><img src="https://res.cloudinary.com/dnsc73sla/image/upload/v1752006942/logo-gold-horse-name_dmbkjk.svg" alt="Supreme Nomands Logo" class="footer-logo mx-auto d-block"/></div>
+    <div class="col-12 col-lg-3 mb-4 mb-lg-0 text-center text-lg-start">
       <h5 class="mobile footer-heading1">Mobile Detailing Unit</h5>
       <h6 class="mobile footer-heading2">We come to you!</h6>
       <div class="contact-info mt-3">
@@ -1087,21 +1668,9 @@
       </div>
     </div>
 
-    <!-- Pages / Quick Links -->
-    <div class="col-12 col-md-6 col-lg-2 mb-4 mb-lg-0 text-center text-lg-start">
-      <h5 class="fs-5 mt-3 mt-lg-0 mb-3">Quick Links</h5>
-      <ul class="navbar-nav flex-column mx-auto d-inline-block">
-        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0">Home</a></li>
-        <li class="nav-item footer-list mb-3"><a href="project.html" class="nav-link text-uppercase p-0">Gallery</a></li>
-        <li class="nav-item footer-list mb-3"><a href="services.html" class="nav-link text-uppercase p-0">Our Services</a></li>
-        <li class="nav-item footer-list mb-3"><a href="about.html" class="nav-link text-uppercase p-0">About Us</a></li>
-        <li class="nav-item footer-list mb-3"><a href="services-single.html" class="nav-link text-uppercase p-0">Academy</a></li>
-      </ul>
-    </div>
-
     <!-- Cities -->
 <div class="col-12 col-lg-7 text-center text-lg-start">
-  <h5 class="fs-5 mt-3 mt-lg-0 mb-3">We Serve</h5>
+  <h5 class="fs-5 mt-3 mt-lg-0 mb-3 d-flex justify-content-center">We Serve</h5>
   <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3 justify-content-center">
     <div class="col"><a href="#" class="nav-link text-uppercase p-0">Charlotte</a></div>
     <div class="col"><a href="#" class="nav-link text-uppercase p-0">Concord</a></div>
@@ -1114,6 +1683,18 @@
     <div class="col"><a href="#" class="nav-link text-uppercase p-0">Rockhill, SC</a></div>
   </div>
 </div>
+
+    <!-- Pages / Quick Links -->
+<div class="col-12 col-lg-2 mb-4 mb-lg-0 text-center text-lg-start">
+      <h5 class="fs-5 mt-3 mt-lg-0 mb-3">Quick Links</h5>
+      <ul class="navbar-nav flex-column mx-auto d-inline-block">
+        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0">Home</a></li>
+        <li class="nav-item footer-list mb-3"><a href="project.html" class="nav-link text-uppercase p-0">Gallery</a></li>
+        <li class="nav-item footer-list mb-3"><a href="services.html" class="nav-link text-uppercase p-0">Our Services</a></li>
+        <li class="nav-item footer-list mb-3"><a href="about.html" class="nav-link text-uppercase p-0">About Us</a></li>
+        <li class="nav-item footer-list mb-3"><a href="services-single.html" class="nav-link text-uppercase p-0">Academy</a></li>
+      </ul>
+    </div>
 
   </footer>
 </div>
@@ -1148,6 +1729,12 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
 
 
 </body>

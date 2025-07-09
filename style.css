@@ -564,17 +564,12 @@ button.filter-button:hover {
   background-color: #f51fb5 !important;
 }
 
+
 /* Inline Text */
 .navbar-nav .nav-link {
   white-space: nowrap;
 }
 
-/* Remove social icons on tablets */
-@media screen and (max-width: 1350px) {
-  .social-nav {
-    text-align: center;
-  }
-}
 
 /* Hero */
 .sndName {
@@ -601,7 +596,7 @@ button.filter-button:hover {
 
 /* Quick Links */
 #about,
-#about-us {
+#about-us{
   background-color: #dec49a;
 }
 
@@ -624,9 +619,153 @@ button.filter-button:hover {
   color: #dc6696;
 }
 
-/* Detailing Services Scroll */
+/* Footer logo */
+.footer-logo{
+  width: 20%;
+  padding-bottom: 4rem;
+  
+}
+
+/* Mobile Price Horizontal Scrolling */
+@media (max-width: 991.98px) {
+  .tab-content .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .tab-content .row .col-lg-3 {
+    flex: 0 0 280px; 
+    max-width: 280px;
+    scroll-snap-align: start;
+  }
+  
+  .plan-post {
+    height: 100%;
+    min-height: 500px; 
+  }
+  
+  /* Hide scrollbar but keep functionality */
+  .tab-content .row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .tab-content .row {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Price Layout */
+/* Fix pricing card layout and content alignment */
+.plan-post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 600px; 
+  padding: 2rem 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  position: relative;
+}
+
+.plan-post .header-top {
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+.plan-post .display-5 {
+  flex-shrink: 0;
+  margin-bottom: 1.5rem;
+}
+
 .price-option {
-  max-height: 300px;
-  overflow-y: auto;
-  padding-right: 0.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.price-option p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; 
+  gap: 0.5rem;
+  text-align: left; 
+}
+
+.price-option .bullet-icon {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  align-self: flex-start; 
+}
+
+/* Make sure the text content itself aligns left */
+.price-option p span,
+.price-option p div {
+  text-align: left;
+  width: 100%;
+}
+
+/* Override any inherited centering */
+.price-option * {
+  text-align: left !important;
+}
+
+/* Make all cards equal height in each row */
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .plan-post {
+    min-height: 550px;
+    padding: 1.5rem 1rem;
+  }
+  
+  .price-option p {
+    font-size: 0.8rem;
+  }
+  
+  .display-5 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Advance Cermanic Info Hover */
+.info-icon {
+  cursor: help;
+  color: #6c757d;
+  font-size: 0.875rem;
+  margin-left: 5px;
+}
+
+.info-icon:hover {
+  color: #495057;
+}
+.tooltip-inner {
+  max-width: 400px; /* Default is 200px */
+  width: max-content;
+  background-color:#1f1f1f;
+}
+
+.paint-packages{
+  border-top: 2px #1452a2 solid;
 }

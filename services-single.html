@@ -45,6 +45,14 @@
         /></a>
 
         <!-- Mobile Layout -->
+         <div class="d-flex align-items-center gap-3 d-xl-none">
+  <a href="tel:+17045611927" class="text-white pt-2">
+    <iconify-icon
+      icon="ic:baseline-call"
+      class="call-icon"
+      style="font-size: 1.5rem;"
+    ></iconify-icon>
+  </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,6 +65,8 @@
             class="hamburger-menu"
           ></iconify-icon>
         </button>
+      </div>
+
         <div
           class="offcanvas offcanvas-end"
           tabindex="-1"
@@ -78,11 +88,11 @@
           <div class="offcanvas-body" >
             <!-- Routes -->
             <ul
-              class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3 ms-lg-5"
+              class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1"
             >
               <li class="nav-item">
                 <a
-                  class="nav-link text-white text-uppercase active mx-2 px-1 mb-2 mb-lg-0"
+                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
                   aria-current="page"
                   href="index.html"
                   >Home</a
@@ -111,7 +121,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-white text-uppercase mx-2 px-1 mb-2 mb-lg-0"
+                  class="nav-link text-white text-uppercase active mx-2 px-1 mb-2 mb-lg-0"
                   href="services-single.html"
                   >Academy</a
                 >
@@ -119,12 +129,22 @@
             </ul>
 
             <!-- Socials -->
-            <div
-              class="d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end social-nav"
+            <div 
+              class="d-flex mt-lg-0 align-items-center justify-content-center offcanvas-body social-div"
             >
               <ul
-                class="d-flex flex-row gap-2 list-unstyled mb-0 social-div"
+                class="d-flex flex-row gap-2 list-unstyled mb-0 social-ul"
               >
+              <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center" href="tel:+17045611927"
+              target="_blank"
+              rel="noopener noreferrer">
+                    <iconify-icon
+                      icon="ic:baseline-call"
+                      class="social-icon text-white"
+                    ></iconify-icon>
+                  </a>
+                </li>
               <li class="nav-item">
                   <a class="nav-link d-flex align-items-center" href="https://www.tiktok.com/@supremenomads704"
               target="_blank"
@@ -134,6 +154,7 @@
                       class="social-icon text-white"
                     ></iconify-icon>
                   </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex align-items-center" href="https://www.instagram.com/supremenomads"
               target="_blank"
@@ -176,7 +197,7 @@
             </div>
             
             <!-- Book Now -->
-            <div>
+            <div class="book-now-div">
             <a href="booking.html" class="btn btn-primary book-now-btn w-100 w-xl-auto ms-0 ms-xl-3">
               Book Now
             </a>
@@ -194,7 +215,7 @@
                     class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white">
                     <h2 class="page-title display-3 mt-5 text-white">Supreme Nomads Academy</h2>
                     <nav class="breadcrumb">
-                        <a class="breadcrumb-item text-white" href="index.html">Coming Soon</a>
+                        <a class="breadcrumb-item text-white text-center" href="index.html">As John C. Maxwell wisely said, “You never really know something until you teach it to someone else.” These words resonate deeply with us at Supreme Nomads Detailing. Even as a respected name in the Charlotte auto industry, we're committed to continuous improvement and sharing our expertise. Stay tuned as we develop the Supreme Nomads Academy, where we'll offer insights and training to elevate your detailing skills! Click below to subscribe for updates and be the first to know when we launch!</a>
                         <!-- <span class="breadcrumb-item active text-white" aria-current="page">Service-Single</span> -->
                     </nav>
                 </div>
@@ -202,15 +223,14 @@
         </div>
     </section>
 
-
 <!-- Footer -->
     <section id="footer">
       <div class="container footer-containerG mt-5 mt-md-0 pt-3">
   <footer class="row my-5 py-5">
     
     <!-- Logo & Contact -->
-    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center text-lg-start">
-      <img src="images/horizontal-logo.png" alt="Supreme" class="footer-logo" />
+    <div><img src="https://res.cloudinary.com/dnsc73sla/image/upload/v1752006942/logo-gold-horse-name_dmbkjk.svg" alt="Supreme Nomands Logo" class="footer-logo mx-auto d-block"/></div>
+    <div class="col-12 col-lg-3 mb-4 mb-lg-0 text-center text-lg-start">
       <h5 class="mobile footer-heading1">Mobile Detailing Unit</h5>
       <h6 class="mobile footer-heading2">We come to you!</h6>
       <div class="contact-info mt-3">
@@ -273,21 +293,9 @@
       </div>
     </div>
 
-    <!-- Pages / Quick Links -->
-    <div class="col-12 col-md-6 col-lg-2 mb-4 mb-lg-0 text-center text-lg-start">
-      <h5 class="fs-5 mt-3 mt-lg-0 mb-3">Quick Links</h5>
-      <ul class="navbar-nav flex-column mx-auto d-inline-block">
-        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0">Home</a></li>
-        <li class="nav-item footer-list mb-3"><a href="project.html" class="nav-link text-uppercase p-0">Gallery</a></li>
-        <li class="nav-item footer-list mb-3"><a href="services.html" class="nav-link text-uppercase p-0">Our Services</a></li>
-        <li class="nav-item footer-list mb-3"><a href="about.html" class="nav-link text-uppercase p-0">About Us</a></li>
-        <li class="nav-item footer-list mb-3"><a href="services-single.html" class="nav-link text-uppercase p-0">Academy</a></li>
-      </ul>
-    </div>
-
     <!-- Cities -->
 <div class="col-12 col-lg-7 text-center text-lg-start">
-  <h5 class="fs-5 mt-3 mt-lg-0 mb-3">We Serve</h5>
+  <h5 class="fs-5 mt-3 mt-lg-0 mb-3 d-flex justify-content-center">We Serve</h5>
   <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3 justify-content-center">
     <div class="col"><a href="#" class="nav-link text-uppercase p-0">Charlotte</a></div>
     <div class="col"><a href="#" class="nav-link text-uppercase p-0">Concord</a></div>
@@ -300,6 +308,18 @@
     <div class="col"><a href="#" class="nav-link text-uppercase p-0">Rockhill, SC</a></div>
   </div>
 </div>
+
+    <!-- Pages / Quick Links -->
+<div class="col-12 col-lg-2 mb-4 mb-lg-0 text-center text-lg-start">
+      <h5 class="fs-5 mt-3 mt-lg-0 mb-3">Quick Links</h5>
+      <ul class="navbar-nav flex-column mx-auto d-inline-block">
+        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0">Home</a></li>
+        <li class="nav-item footer-list mb-3"><a href="project.html" class="nav-link text-uppercase p-0">Gallery</a></li>
+        <li class="nav-item footer-list mb-3"><a href="services.html" class="nav-link text-uppercase p-0">Our Services</a></li>
+        <li class="nav-item footer-list mb-3"><a href="about.html" class="nav-link text-uppercase p-0">About Us</a></li>
+        <li class="nav-item footer-list mb-3"><a href="services-single.html" class="nav-link text-uppercase p-0">Academy</a></li>
+      </ul>
+    </div>
 
   </footer>
 </div>
