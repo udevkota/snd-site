@@ -622,9 +622,10 @@ button.filter-button:hover {
   width: 20%;
   padding-bottom: 4rem;
 }
+/* Home Detailing Packages */
 
-/* Mobile Price Horizontal Scrolling */
-@media (max-width: 991.98px) {
+/* Tablet Price Horizontal Scrolling (768px - 991.98px) */
+@media (min-width: 585px) and (max-width: 991.98px) {
   .tab-content .row {
     display: flex;
     flex-wrap: nowrap;
@@ -639,6 +640,64 @@ button.filter-button:hover {
     flex: 0 0 280px;
     max-width: 280px;
     scroll-snap-align: start;
+  }
+
+  .plan-post {
+    height: 100%;
+    min-height: 500px;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .tab-content .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-content .row {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Mobile Navigation Tabs Centering */
+@media screen and (max-width: 760px) {
+  .nav-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-tabs .nav-item {
+    flex: 1;
+    max-width: 325px;
+  }
+
+  .nav-tabs .nav-link {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 0 !important;
+  }
+}
+
+/* Mobile Price Cards - Full Width with Horizontal Scroll (max-width: 767.98px) */
+@media (max-width: 585px) {
+  .tab-content .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tab-content .row .col-lg-3 {
+    flex: 0 0 calc(100vw - 4rem); /* Full width minus container padding and gap */
+    max-width: calc(100vw - 4rem);
+    scroll-snap-align: center;
   }
 
   .plan-post {
@@ -763,7 +822,40 @@ button.filter-button:hover {
   background-color: #1f1f1f;
 }
 
-.paint-packages,
+.paint-packages{
+  background-color: #f5f6f8;
+}
 .maintenance-packages {
-  border-top: 2px #1452a2 solid;
+  background-color: #f8fbff;
+}
+
+/* Add ons */
+#process {
+  padding-bottom: 5rem;
+}
+
+#process .services-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center !important;
+  align-items: center; /* This ensures flex items are centered */
+}
+
+#process .services-content .service-icon {
+  align-self: center; /* Explicitly center the icon */
+}
+
+#process .services-content p {
+  flex-grow: 1;
+  margin-bottom: 0;
+  text-align: center; /* Ensure paragraph text stays centered */
+}
+
+/* Maintenance */
+.plan-post {
+    padding: 2rem 1rem 1rem 1rem !important;
+}
+.book-now-btn-links {
+    margin-bottom: 0 !important;
 }
