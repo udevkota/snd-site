@@ -609,7 +609,7 @@ button.filter-button:hover {
 
 /* Timeline Facts */
 #process {
-  background-color: #d7d4d4;
+  background-color: #f8fbff;
 }
 
 /* Footer */
@@ -619,8 +619,8 @@ button.filter-button:hover {
 
 /* Footer logo */
 .footer-logo {
-  width: 15%;
-  padding-bottom: 4rem;
+  width: 20%;
+  padding-bottom: 2%;
 }
 /* Home Detailing Packages */
 
@@ -644,7 +644,7 @@ button.filter-button:hover {
 
   .plan-post {
     height: 100%;
-    min-height: 500px;
+    min-height: 100px;
   }
 
   /* Hide scrollbar but keep functionality */
@@ -702,7 +702,7 @@ button.filter-button:hover {
 
   .plan-post {
     height: 100%;
-    min-height: 500px;
+    min-height: 100px;
   }
 
   /* Hide scrollbar but keep functionality */
@@ -722,7 +722,7 @@ button.filter-button:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 600px;
+  min-height: 100px;
   padding: 2rem 1rem;
   border: 1px solid #e9ecef;
   border-radius: 8px;
@@ -792,7 +792,7 @@ button.filter-button:hover {
 /* Responsive text sizing */
 @media (max-width: 768px) {
   .plan-post {
-    min-height: 550px;
+    min-height: 100px;
     padding: 1.5rem 1rem;
   }
 
@@ -823,10 +823,10 @@ button.filter-button:hover {
 }
 
 .paint-packages{
-  background-color: #f5f6f8;
+  background-color: #e0dbdb;
 }
 .maintenance-packages {
-  background-color: #f8fbff;
+  background-color: #f5f6f8;
 }
 
 /* Add ons */
@@ -852,10 +852,3 @@ button.filter-button:hover {
   text-align: center; /* Ensure paragraph text stays centered */
 }
 
-/* Maintenance */
-.plan-post {
-    padding: 2rem 1rem 1rem 1rem !important;
-}
-.book-now-btn-links {
-    margin-bottom: 0 !important;
-}
