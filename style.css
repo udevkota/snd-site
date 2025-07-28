@@ -592,23 +592,24 @@ button.filter-button:hover {
   border-color: #dca958;
 }
 
-#hero{
-    position: relative;
-    overflow: hidden;
+#hero {
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -2;
-    object-fit: cover;
-} */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -2;
+  object-fit: cover;
+}
+*/
 
 /* .hero-overlay {
     position: absolute;
@@ -622,7 +623,7 @@ button.filter-button:hover {
 /* Quick Links */
 #about,
 #about-us {
-  background-color: #dec49a;
+  background-color: #dec49a !important;
 }
 
 .book-now-btn-links {
@@ -849,7 +850,7 @@ button.filter-button:hover {
   background-color: #1f1f1f;
 }
 
-.paint-packages{
+.paint-packages {
   background-color: #e0dbdb;
 }
 .maintenance-packages {
@@ -879,3 +880,120 @@ button.filter-button:hover {
   text-align: center; /* Ensure paragraph text stays centered */
 }
 
+/* footer */
+.footer-section {
+  padding: 0 15px;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.footer-list {
+  margin-bottom: 0.75rem;
+}
+
+.footer-list a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #333;
+}
+
+.social-icon-footer {
+  font-size: 1.5rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.social-icon-footer:hover {
+  color: #333;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  color: #666;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #333;
+}
+
+.footer-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.city-item {
+  text-align: center;
+}
+
+/* Ensure consistent spacing */
+.footer-content > .col-lg-4:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+
+@media (max-width: 991px) {
+  .footer-content > .col-lg-4:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+/* Quick Links */
+#quick-links {
+  background-color: #dec49a;
+  scroll-margin-top: 100px;
+}
+
+/* Hamburger */
+
+/* hamburger logo */
+.offcanvas-header {
+    justify-content: center;
+}
+
+.hamburger-logo {
+    width: fit-content;
+    height: auto;
+    max-width: 200px; 
+}
+
+/* hamburger x */
+.offcanvas-header {
+    position: relative;
+}
+
+.offcanvas-header .btn-close {
+    position: absolute;
+    right: 0.5rem; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.offcanvas-header {
+    margin-bottom: 0; /* Removes gap between header and body */
+}
+
+#offcanvasNavbar .offcanvas-body {
+    padding-top: 0 !important;
+}
