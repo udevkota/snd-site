@@ -635,11 +635,6 @@ button.filter-button:hover {
   background-color: #f51fb5 !important;
 }
 
-/* Timeline Facts */
-#process {
-  background-color: #f8fbff;
-}
-
 /* Footer */
 .footer-heading2 {
   color: #dc6696;
@@ -997,3 +992,4 @@ button.filter-button:hover {
 #offcanvasNavbar .offcanvas-body {
     padding-top: 0 !important;
 }
+
