@@ -995,11 +995,9 @@ button.filter-button:hover {
 
 /* Hero for book now  */
 #hero {
-  background-image: url('images/HERO BOOK NOW.jpg');
   background-position: center center; /* You can change this to 'top center', 'left top', '50% 20%', etc */
   background-repeat: no-repeat;
   background-size: cover; /* or 'contain' or specify width/height */
-  height: 
 }
 
 #hero .overlay {
@@ -1012,4 +1010,8 @@ button.filter-button:hover {
 #hero > .container {
   position: relative;
   z-index: 2;
+}
+
+.homepage-video{
+  height: vh;
 }
