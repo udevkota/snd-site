@@ -687,14 +687,14 @@ button.filter-button:hover {
 .hero-section {
   position: relative;
   overflow: hidden;
-  height: 60vh;
+  height: 55vh;
   min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+  /* background-attachment: fixed; */
+  /* background-position: center center; */
 }
 
 .hero-gallery {
@@ -705,6 +705,7 @@ button.filter-button:hover {
 .hero-services {
   background-image: url(images/HERO\ OUR\ SERVICES.png);
   background-size: 110% auto;
+  background-position: center bottom;
 }
 
 .hero-about {
