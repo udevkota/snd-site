@@ -614,7 +614,7 @@ button.filter-button:hover {
   min-height: 100%;
   width: auto;
   height: auto;
-  transform: translateX(-50%) translateY(-50%) scale(0.42);
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
   z-index: -2;
   object-fit: cover;
 }
@@ -625,7 +625,7 @@ button.filter-button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   pointer-events: none;
 }
@@ -664,7 +664,7 @@ button.filter-button:hover {
   .hero-video {
     min-width: 130%; /* More zoom out on mobile */
     min-height: 130%;
-    transform: translateX(-50%) translateY(-50%) scale(0.5);
+    transform: translateX(-50%) translateY(-50%) scale(0.6);
   }
 
   .hero-text {
@@ -687,7 +687,7 @@ button.filter-button:hover {
 .hero-section {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 60vh;
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -697,34 +697,34 @@ button.filter-button:hover {
   background-position: center center;
 }
 
-.hero-gallery{
+.hero-gallery {
   background-image: url(https://supreme-nomads-website.s3.us-east-1.amazonaws.com/hero-gallery.png);
   background-size: 120% auto;
 }
 
-.hero-services{
+.hero-services {
   background-image: url(images/HERO\ OUR\ SERVICES.png);
   background-size: 110% auto;
 }
 
-.hero-about{
+.hero-about {
   background-image: url(images/HERO\ ABOUT\ US.png);
   background-size: 110% auto;
 }
 
-.hero-academy{
+.hero-academy {
   background-image: url(images/HERO\ ACADEMY.png);
   background-size: 110% auto;
 }
 
-.hero-booking{
+.hero-booking {
   background-image: url(https://supreme-nomads-website.s3.us-east-1.amazonaws.com/hero-book-now.png);
   background-size: 110% auto;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
 /* Quick Links */
@@ -952,7 +952,8 @@ button.filter-button:hover {
   background-color: #1f1f1f;
 }
 
-.paint-packages, #process {
+.paint-packages,
+#process {
   background-color: #e0dbdb;
 }
 =
@@ -1102,8 +1103,27 @@ button.filter-button:hover {
 sup {
   vertical-align: baseline;
   position: relative;
-  top: 0.3em; /* Adjust this value - smaller = lower */
-  left: -0.5em;
-  margin-right: -0.7em;
+  top: 0.3em;
+  left: -0.3em;
+  margin-right: -0.3em;
   font-size: 0.75em;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+  sup {
+    left: -0.5em;
+    margin-right: -0.5em;
+  }
+}
+
+/* Ceramic coating lines */
+.large-screen-break {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .large-screen-break {
+    display: block;
+  }
 }
