@@ -999,7 +999,7 @@ button.filter-button:hover {
   background-position: center center; /* You can change this to 'top center', 'left top', '50% 20%', etc */
   background-repeat: no-repeat;
   background-size: cover; /* or 'contain' or specify width/height */
-  height: 100%;
+  height: 
 }
 
 #hero .overlay {
