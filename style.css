@@ -703,18 +703,18 @@ button.filter-button:hover {
 }
 
 .hero-services {
-  background-image: url(images/HERO\ OUR\ SERVICES.png);
+  background-image: url(https://supreme-nomads-website.s3.us-east-1.amazonaws.com/hero-our-services.png);
   background-size: 110% auto;
   background-position: center center;
 }
 
 .hero-about {
-  background-image: url(images/HERO\ ABOUT\ US.png);
+  background-image: url(https://supreme-nomads-website.s3.us-east-1.amazonaws.com/hero-about-us.png);
   background-size: 110% auto;
 }
 
 .hero-academy {
-  background-image: url(images/HERO\ ACADEMY.png);
+  background-image: url(https://supreme-nomads-website.s3.us-east-1.amazonaws.com/hero-academy.png);
   background-size: 110% auto;
 }
 
