@@ -705,7 +705,7 @@ button.filter-button:hover {
 .hero-services {
   background-image: url(images/HERO\ OUR\ SERVICES.png);
   background-size: 110% auto;
-  background-position: center bottom;
+  background-position: center center;
 }
 
 .hero-about {
