@@ -954,7 +954,7 @@ button.filter-button:hover {
 }
 
 .paint-packages,
-#process {
+#process, #gallery {
   background-color: #e0dbdb;
 }
 
@@ -1109,6 +1109,10 @@ sup {
   font-size: 0.75em;
 }
 
+.sup-line{
+    display: inline-block; 
+    white-space: nowrap;
+}
 /* Adjust for larger screens */
 @media (min-width: 768px) {
   sup {
@@ -1127,3 +1131,14 @@ sup {
     display: block;
   }
 }
+
+/* about us */
+.about-supreme{
+  line-height: 1.2;
+}
+
+.disclaimer{
+  font-size: x-small;
+  text-align: center;
+}
+
