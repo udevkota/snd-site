@@ -1063,7 +1063,7 @@ button.filter-button:hover {
 /* Quick Links */
 #quick-links {
   background-color: #dec49a;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 150px;
 }
 
 /* Hamburger */
@@ -1139,6 +1139,13 @@ sup {
 
 .disclaimer{
   font-size: x-small;
-  text-align: center;
 }
 
+.hero-text-div{
+  margin-top: 30vh;
+}
+
+.we-come-footer{
+  font-size: 1.25rem;
+  color: #dc6696;
+}
