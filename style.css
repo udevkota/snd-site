@@ -1154,7 +1154,7 @@ sup {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .hero-section {
-    height: 40vh;
+    height: 50vh;
     min-height: 300px;
     background-size: cover; /* Ensure full coverage */
     background-position: center center;
