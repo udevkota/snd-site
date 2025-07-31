@@ -954,7 +954,8 @@ button.filter-button:hover {
 }
 
 .paint-packages,
-#process, #gallery {
+#process,
+#gallery {
   background-color: #e0dbdb;
 }
 
@@ -1109,9 +1110,9 @@ sup {
   font-size: 0.75em;
 }
 
-.sup-line{
-    display: inline-block; 
-    white-space: nowrap;
+.sup-line {
+  display: inline-block;
+  white-space: nowrap;
 }
 /* Adjust for larger screens */
 @media (min-width: 768px) {
@@ -1133,23 +1134,22 @@ sup {
 }
 
 /* about us */
-.about-supreme{
+.about-supreme {
   line-height: 1.2;
 }
 
-.disclaimer{
+.disclaimer {
   font-size: x-small;
 }
 
-.hero-text-div{
+.hero-text-div {
   margin-top: 30vh;
 }
 
-.we-come-footer{
+.we-come-footer {
   font-size: 1.25rem;
   color: #dc6696;
 }
-
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
@@ -1159,20 +1159,21 @@ sup {
     background-size: cover; /* Ensure full coverage */
     background-position: center center;
   }
-  
+
   .hero-content {
     padding: 0 15px;
   }
-  
+
   .hero-content h1,
   .hero-content .h1 {
     font-size: 1.8rem;
     line-height: 1.2;
     margin-bottom: 1rem;
   }
-  
+
   .hero-content p {
     font-size: 1rem;
     line-height: 1.4;
     margin-bottom: 1.5rem;
   }
+}
