@@ -675,6 +675,11 @@ button.filter-button:hover {
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  .footer-copy{
+  font-size: x-small;
+}
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -744,15 +749,21 @@ button.filter-button:hover {
 }
 
 /* Footer */
+
 .footer-heading2 {
   color: #dc6696;
 }
-
 /* Footer logo */
 .footer-logo {
-  width: 20%;
+  width: 200px;
+  height: auto;
   padding-bottom: 2%;
 }
+
+.footer-em{
+  font-size: 0.875em !important;
+}
+
 /* Home Detailing Packages */
 
 /* Tablet Price Horizontal Scrolling (768px - 991.98px) */
@@ -1033,10 +1044,6 @@ button.filter-button:hover {
   color: #333;
 }
 
-.footer-logo {
-  max-width: 200px;
-  height: auto;
-}
 
 .cities-grid {
   display: grid;
@@ -1067,6 +1074,9 @@ button.filter-button:hover {
   scroll-margin-top: 150px;
 }
 
+#paintPrice{
+  scroll-margin-top: 125px;
+}
 /* Hamburger */
 
 /* hamburger logo */
@@ -1146,9 +1156,8 @@ sup {
   margin-top: 30vh;
 }
 
-.we-come-footer {
-  font-size: 1.25rem;
-  color: #dc6696;
+.footer-text{
+  font-size: 20px;
 }
 
 /* Mobile adjustments */
@@ -1177,3 +1186,21 @@ sup {
     margin-bottom: 1.5rem;
   }
 }
+
+/* Youtube Video */
+
+.video-container {
+    width: 100%;
+    max-width: 1200px; /* Match your gallery container width */
+    margin: 0 auto;
+    padding: 3rem 1rem; /* Breathing room */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 8px; /* Optional: soften the edges */
+}
+
+
